@@ -32,11 +32,11 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.SQL.EntityStoreSqlPolicy, Sitecore.Commerce.Plugin.SQL",
-        "TrustedConnection": "PlaceholderForGlobalTrustedConnection",
-        "UserName": "PlaceholderForGlobalDatabaseUserName",
-        "Password": "PlaceholderForGlobalDatabasePassword",
-        "Database": "PlaceholderForGlobalDatabaseName",
-        "Server": "PlaceholderForGlobalDatabaseServer",
+        "TrustedConnection": "true",
+        "UserName": "DESKTOP-GV910KE\\CSFndRuntimeUser",
+        "Password": "Sql@V10#",
+        "Database": "SitecoreCommerce_Global",
+        "Server": "DESKTOP-GV910KE",
         "Version": "10.0.0",
         "AdditionalParameters": "",
         "ConnectTimeout": 20,
@@ -45,7 +45,7 @@
       },
       {
         "$type": "Sitecore.Commerce.Core.DeploymentPolicy, Sitecore.Commerce.Core",
-        "DeploymentId": "PlaceholderForDeploymentId",
+        "DeploymentId": "Deployment01",
         "DeploymentVersion": "1.0.0",
         "ParentNodeId": "Hub01"
       },
@@ -67,15 +67,15 @@
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Management.SitecoreConnectionPolicy, Sitecore.Commerce.Plugin.Management",
-        "Host": "PlaceholderForSitecoreHost",
-        "SitecoreDatabase": "PlaceholderForSitecoreDatabase",
-        "UserName": "PlaceholderForSitecoreUsername",
-        "Domain": "PlaceholderForSitecoreDomain",
-        "Password": "PlaceholderForSitecorePassword",
+        "Host": "sxa.storefront.com",
+        "SitecoreDatabase": "master",
+        "UserName": "admin",
+        "Domain": "sitecore",
+        "Password": "b",
         "ConnectionLeaseTimeout": 60000,
         "AuthRequestUrl": "sitecore/api/ssc/auth/login",
-        "Protocol": "PlaceholderForSitecoreProtocol",
-        "AllowAnonymousUser": "PlaceholderForSitecoreAllowAnonymousUser"
+        "Protocol": "https",
+        "AllowAnonymousUser": "false"
       },
       {
         "$type": "Sitecore.Commerce.Plugin.Content.DefaultContentPathsPolicy, Sitecore.Commerce.Plugin.Content",

@@ -1,17 +1,17 @@
 {
   "AppSettings": {
-    "SiteTitle": "PlaceholderForSiteTitle",
+    "SiteTitle": "CommerceAuthoring_Sc",
     "BootStrapFile": "Global",
-    "DeploymentId": "PlaceholderForDeploymentId",
-    "EnvironmentName": "PlaceholderForEnvironmentName",
+    "DeploymentId": "Deployment01",
+    "EnvironmentName": "HabitatAuthoring",
     "EncryptionProtectionType": "Redis",
     "EncryptionCertificateHash": "Enter a valid certificate thumbprint for a PXF file. X-509 not supported yet",
     "EncryptionSID": "Enter a valid SID for a domain registered user",
     "EncryptionKeyStorageLocation": "c:\\Encryption-Keys\\",
-    "SitecoreIdentityServerUrl": "PlaceholderForSitecoreIdentityServerUrl",
-    "AllowedOrigins": "PlaceholderForBizFxUrl|PlaceholderForSxaStorefrontUrl",
-    "AntiForgeryEnabled": "PlaceholderForAntiForgeryEnabled",
-    "CommerceServicesHostPostfix": "PlaceholderForCommerceServicesHostPostfix",
+    "SitecoreIdentityServerUrl": "https://sc10identityserver.dev.local",
+    "AllowedOrigins": "https://localhost:4200|https://bizfx.sc.com|https://sxa.storefront.com",
+    "AntiForgeryEnabled": true,
+    "CommerceServicesHostPostfix": "sc.com",
     "UseHttpsInKestrel": false
   },
   "ApplicationInsights": {
@@ -45,8 +45,7 @@
         "Name": "ApplicationInsights",
         "Args": {
           "restrictedToMinimumLevel": "Warning",
-          "telemetryConverter":
-            "Serilog.Sinks.ApplicationInsights.Sinks.ApplicationInsights.TelemetryConverters.TraceTelemetryConverter, Serilog.Sinks.ApplicationInsights"
+          "telemetryConverter": "Serilog.Sinks.ApplicationInsights.Sinks.ApplicationInsights.TelemetryConverters.TraceTelemetryConverter, Serilog.Sinks.ApplicationInsights"
         }
       }
     ],
@@ -61,8 +60,8 @@
       "Enabled": true,
       "CacheStoreName": "Commerce-Redis-Store",
       "Options": {
-        "Configuration": "PlaceholderForRedisConfiguration",
-        "InstanceName": "PlaceholderForRedisInstanceName"
+        "Configuration": "localhost:6379",
+        "InstanceName": "Redis"
       }
     }
   },
@@ -87,10 +86,10 @@
     }
   },
   "CommerceConnector": {
-    "ClientId": "PlaceholderForCommerceConnectorClientId"
-    },
-    "HealthCheck": {
-      "Enabled": true,
-      "URL": "/health"
+    "ClientId": "CommerceEngineConnect"
+  },
+  "HealthCheck": {
+    "Enabled": true,
+    "URL": "/health"
   }
 }

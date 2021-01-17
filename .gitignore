@@ -339,3 +339,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 /Sitecore.Commerce.Engine/wwwroot/data/Catalogs
+/Sitecore.Commerce.Engine/wwwroot/logs
